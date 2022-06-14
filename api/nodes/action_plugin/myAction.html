@@ -1,0 +1,45 @@
+<script type="text/javascript">
+    RED.nodes.registerType('myAction', {
+        category: 'speciale',
+        color: '#fcb103',
+        defaults: {
+            name: { value: "" },
+            deviceId: { value: "" },
+            state: { value: "" },
+            value: { value: "" },
+            dataType: { value: "" },
+            mode: { value: "" }
+        },
+        inputLabels: "deviceFields",
+        outputLabels: ["action"],
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-bolt",
+        label: function () {
+            return this.name || "myAction";
+        },
+
+    });
+</script>
+
+<script type="text/html" data-template-name="myAction">
+    <div class="form-row">
+        <label for="node-name"><i class="fa fa-tag"></i> Action Name</label>
+        <input type="text" id="node-input-name" placeholder="Action Name">
+        <label for="node-dataType"><i class="fa fa-tag"></i> Data Type</label>
+        <select id="node-input-dataType">
+            <option>int</option>
+            <option>bool</option>
+            <option>string</option>
+            <option>date</option>
+            </select>
+            <br>
+            <br>
+        <label for="node-value"><i class="fa fa-tag"></i> Value</label>
+        <input type="text" id="node-input-value" placeholder="Value">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="myAction">
+    <h3>Action</h3>
+</script>

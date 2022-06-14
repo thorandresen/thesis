@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('myComment', {
+        category: 'speciale',
+        color: '#aba79f',
+        defaults: {
+            name: { value: "" },
+            text: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        inputLabels: "inject",
+        outputLabels: ["comment"],
+        icon: "node-red/comment.svg",
+        label: function () {
+            return this.name || "myComment";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="myComment">
+    <div class="form-row">
+        <label for="node-name"><i class="fa fa-tag"></i> Comment Name</label>
+        <input type="text" id="node-input-name" placeholder="Comment Name">
+        <label for="node-text"><i class="fa fa-tag"></i> Comment Text</label>
+        <input type="text" id="node-input-text" placeholder="Text">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="myComment">
+
+</script>

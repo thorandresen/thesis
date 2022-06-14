@@ -1,0 +1,29 @@
+[
+    {
+        "deviceInfo": "Hue bulb",
+        "id": "178237192",
+        "state": {
+            "brightness": 20,
+            "warmth": "50%"
+        },
+        "comments": [
+            {
+                "comment": "Tænd bulb når jeg kommer hjem",
+                "id": "29391010"
+            }
+        ]
+    },
+    {
+        "deviceInfo": "Philips Motion",
+        "id": "29391010",
+        "state": {
+            "presence": true
+        },
+        "comments": [
+            {
+                "comment": "Tænd bulb når jeg kommer hjem",
+                "id": "178237192"
+            }
+        ]
+    }
+]

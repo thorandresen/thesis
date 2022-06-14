@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('actionCustomization', {
+        category: 'speciale',
+        color: '#ffff00',
+        defaults: {
+            name: { value: "" },
+            mode: { value: "" }
+        },
+        inputLabels: "action",
+        outputLabels: ["customization"],
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-bolt",
+        label: function () {
+            return this.name || "actionCustomization";
+        },
+
+    });
+</script>
+
+<script type="text/html" data-template-name="actionCustomization">
+    <div class="form-row">
+        <label for="node-name"><i class="fa fa-tag"></i> Action Name</label>
+        <input type="text" id="node-input-name" placeholder="Action Name">
+        <label for="node-mode"><i class="fa fa-tag"></i>Light Mode</label>
+        <select id="node-input-mode">
+            <option>blinking</option>
+            <option>pulsing</option>
+            <option>static</option>
+            </select>
+            <br>
+            <br>
+    </div>
+</script>
+
+<script type="text/html" data-help-name="actionCustomization">
+    <h3>Customization</h3>
+</script>

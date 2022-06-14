@@ -1,0 +1,16 @@
+{
+  "name": "my-trigger-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myTrigger.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "node-red": {
+    "nodes": {
+      "device": "myTrigger.js"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+<script type="text/javascript">
+    RED.nodes.registerType('myTrigger', {
+        category: 'speciale',
+        color: '#e83f25',
+        defaults: {
+            name: { value: "" },
+            deviceId: { value: "" },
+            operator: { value: "" },
+            state: { value: "" },
+            value: { value: "" },
+            dataType: { value: "" },
+            mode: { value: "" }
+
+        },
+        inputs: 1,
+        inputLabels: "deviceFields",
+        outputLabels: ["trigger"],
+        outputs: 1,
+        icon: "node-red/trigger.svg",
+        label: function () {
+            return this.name || "myTrigger";
+        },
+
+    });
+</script>
+
+<script type="text/html" data-template-name="myTrigger">
+    <div class="form-row">
+        <label for="node-name"><i class="fa fa-tag"></i> Trigger Name</label>
+        <input type="text" id="node-input-name" placeholder="Trigger Name">
+
+
+        <label for="node-dataType"><i class="fa fa-tag"></i> Data Type</label>
+        <select id="node-input-dataType">
+            <option>int</option>
+            <option>bool</option>
+            <option>string</option>
+            <option>date</option>
+            </select>
+            <br>
+      
+        <br>
+        <label for="node-operator"><i class="fa fa-tag"></i> Operator</label>
+        <select id="node-input-operator">
+            <option>></option>
+            <option><</option>
+            <option>==</option>
+            </select>
+        <br>    
+        <br>
+        <label for="node-value"><i class="fa fa-tag"></i> Value</label>
+        <input type="text" id="node-input-value" placeholder="Value">
+        <br>
+    </div>
+</script>
+
+<script type="text/html" data-help-name="myTrigger">
+    <h3>Trigger</h3>
+</script>

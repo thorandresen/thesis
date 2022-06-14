@@ -1,0 +1,17 @@
+{
+    "trigger": {
+        "deviceId": 1923,
+        "state": "presence",
+        "operator": "==",
+        "value": "true"
+    },
+    "action": {
+        "deviceId": 1922,
+        "state": "hue",
+        "value": "80"
+    },
+    "comment": {
+        "name": "Lysfix",
+        "text": "Jeg har fixet dit shit"
+    }
+}

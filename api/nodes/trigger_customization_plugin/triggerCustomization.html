@@ -1,0 +1,38 @@
+<script type="text/javascript">
+    RED.nodes.registerType('triggerCustomization', {
+        category: 'speciale',
+        color: '#EC5800',
+        defaults: {
+            name: { value: "" },
+            mode: { value: "" }
+        },
+        inputLabels: "trigger",
+        outputLabels: ["customization"],
+        inputs: 1,
+        outputs: 1,
+        icon: "node-red/trigger.svg",
+        label: function () {
+            return this.name || "triggerCustomization";
+        },
+
+    });
+</script>
+
+<script type="text/html" data-template-name="triggerCustomization">
+    <div class="form-row">
+        <label for="node-name"><i class="fa fa-tag"></i> Action Name</label>
+        <input type="text" id="node-input-name" placeholder="Action Name">
+        <label for="node-mode"><i class="fa fa-tag"></i>Activity Duration</label>
+        <select id="node-input-mode">
+            <option>short</option>
+            <option>medium</option>
+            <option>long</option>
+            </select>
+            <br>
+            <br>
+    </div>
+</script>
+
+<script type="text/html" data-help-name="triggerCustomization">
+    <h3>Customization</h3>
+</script>

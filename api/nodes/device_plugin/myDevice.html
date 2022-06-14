@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    RED.nodes.registerType('myDevice', {
+        category: 'speciale',
+        color: '#46d5e8',
+        defaults: {
+            name: { value: "" },
+            deviceInfo: { value: "" },
+            deviceId: { value: "" },
+            state: { value: [] },
+            outputs: { value: 2 },
+        },
+        inputLabels: "inject",
+        inputs: 1,
+        icon: "node-red/light.svg",
+        label: function () {
+            return this.name || "myDevice";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="myDevice">
+    <div class="form-row">
+        
+    </div>
+</script>
+
+<script type="text/html" data-help-name="myDevice">
+    <h3>Device</h3>
+</script>

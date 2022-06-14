@@ -1,0 +1,194 @@
+[
+    {
+        "16": {
+            "state": {
+                "on": false,
+                "bri": 254,
+                "hue": 63606,
+                "sat": 254,
+                "effect": "none",
+                "xy": [
+                    0.6351,
+                    0.281
+                ],
+                "ct": 153,
+                "alert": "select",
+                "colormode": "xy",
+                "mode": "homeautomation",
+                "reachable": true
+            },
+            "swupdate": {
+                "state": "noupdates",
+                "lastinstall": "2022-02-22T14:10:35"
+            },
+            "type": "Extended color light",
+            "name": "Lamp",
+            "modelid": "LCA006",
+            "manufacturername": "Signify Netherlands B.V.",
+            "productname": "Hue color lamp",
+            "capabilities": {
+                "certified": true,
+                "control": {
+                    "mindimlevel": 200,
+                    "maxlumen": 1055,
+                    "colorgamuttype": "C",
+                    "colorgamut": [
+                        [
+                            0.6915,
+                            0.3083
+                        ],
+                        [
+                            0.17,
+                            0.7
+                        ],
+                        [
+                            0.1532,
+                            0.0475
+                        ]
+                    ],
+                    "ct": {
+                        "min": 153,
+                        "max": 500
+                    }
+                },
+                "streaming": {
+                    "renderer": true,
+                    "proxy": true
+                }
+            },
+            "config": {
+                "archetype": "sultanbulb",
+                "function": "mixed",
+                "direction": "omnidirectional",
+                "startup": {
+                    "mode": "safety",
+                    "configured": true
+                }
+            },
+            "uniqueid": "00:17:88:01:0b:a9:3a:96-0b",
+            "swversion": "1.76.11",
+            "swconfigid": "0B4D3445",
+            "productid": "Philips-LCA006-1-A60HECLv1"
+        }
+    },
+    {
+        "success": {
+            "username": "dpfYHD7aXhETTFOW7cafIgTrZskxuiJCJ3tPENkB"
+        }
+    },
+    {
+        "1": {
+            "config": {
+                "configured": false,
+                "on": true,
+                "sunriseoffset": 30,
+                "sunsetoffset": -30
+            },
+            "manufacturername": "Signify Netherlands B.V.",
+            "modelid": "PHDL00",
+            "name": "Daylight",
+            "state": {
+                "daylight": null,
+                "lastupdated": "none"
+            },
+            "swversion": "1.0",
+            "type": "Daylight"
+        },
+        "2": {
+            "capabilities": {
+                "certified": true,
+                "primary": true
+            },
+            "config": {
+                "alert": "none",
+                "battery": 100,
+                "ledindication": false,
+                "on": true,
+                "pending": [],
+                "reachable": true,
+                "sensitivity": 2,
+                "sensitivitymax": 2,
+                "usertest": false
+            },
+            "manufacturername": "Signify Netherlands B.V.",
+            "modelid": "SML001",
+            "name": "Motion sensor",
+            "productname": "Hue motion sensor",
+            "state": {
+                "lastupdated": "2022-02-23T16:09:27",
+                "presence": false
+            },
+            "swupdate": {
+                "lastinstall": "2022-02-23T16:03:52",
+                "state": "transferring"
+            },
+            "swversion": "6.1.0.18912",
+            "type": "ZLLPresence",
+            "uniqueid": "00:17:88:01:03:28:ea:4b-02-0406"
+        },
+        "3": {
+            "capabilities": {
+                "certified": true,
+                "primary": false
+            },
+            "config": {
+                "alert": "none",
+                "battery": 100,
+                "ledindication": false,
+                "on": true,
+                "pending": [],
+                "reachable": true,
+                "tholddark": 16000,
+                "tholdoffset": 7000,
+                "usertest": false
+            },
+            "manufacturername": "Signify Netherlands B.V.",
+            "modelid": "SML001",
+            "name": "Hue ambient light sensor 1",
+            "productname": "Hue ambient light sensor",
+            "state": {
+                "dark": false,
+                "daylight": false,
+                "lastupdated": "2022-02-23T16:14:17",
+                "lightlevel": 16010
+            },
+            "swupdate": {
+                "lastinstall": "2022-02-23T16:03:52",
+                "state": "transferring"
+            },
+            "swversion": "6.1.0.18912",
+            "type": "ZLLLightLevel",
+            "uniqueid": "00:17:88:01:03:28:ea:4b-02-0400"
+        },
+        "4": {
+            "capabilities": {
+                "certified": true,
+                "primary": false
+            },
+            "config": {
+                "alert": "none",
+                "battery": 100,
+                "ledindication": false,
+                "on": true,
+                "pending": [],
+                "reachable": true,
+                "usertest": false
+            },
+            "manufacturername": "Signify Netherlands B.V.",
+            "modelid": "SML001",
+            "name": "Hue temperature sensor 1",
+            "productname": "Hue temperature sensor",
+            "state": {
+                "lastupdated": "2022-02-23T16:14:34",
+                "temperature": 1684
+            },
+            "swupdate": {
+                "lastinstall": "2022-02-23T16:03:52",
+                "state": "transferring"
+            },
+            "swversion": "6.1.0.18912",
+            "type": "ZLLTemperature",
+            "uniqueid": "00:17:88:01:03:28:ea:4b-02-0402"
+        }
+    }
+]

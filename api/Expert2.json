@@ -1,0 +1,92 @@
+[
+    {
+        "deviceInfo": "Hue bulb",
+        "id": "178237192",
+        "state": {
+            "brightness": 20,
+            "warmth": "50%"
+        },
+        "comments": [
+            {
+                "comment": "Tænd bulb når jeg kommer hjem",
+                "id": "29391010"
+            }
+        ]
+    },
+    {
+        "deviceInfo": "Philips Motion",
+        "id": "29391010",
+        "state": {
+            "presence": true
+        },
+        "comments": [
+            {
+                "comment": "Tænd bulb når jeg kommer hjem",
+                "id": "178237192"
+            }
+        ]
+    },
+    {
+        "actions": [
+            {
+                "0": [
+                    {
+                        "type": "device",
+                        "trigger": {
+                            "id": "29391010",
+                            "operator": "==",
+                            "state": "presence",
+                            "value": "true"
+                        }
+                    },
+                    {
+                        "type": "device",
+                        "triggered": {
+                            "id": "178237192",
+                            "state": "brightness",
+                            "value": "100%"
+                        }
+                    }
+                ]
+            },
+            {
+                "1": [
+                    {
+                        "type": "http",
+                        "trigger": {
+                            "endpoint": "worldclock.com/time",
+                            "dataType": "DateTime",
+                            "operator": "==",
+                            "value": "17:00"
+                        }
+                    },
+                    {
+                        "type": "device",
+                        "triggered": {
+                            "id": "178237192",
+                            "state": "brightness",
+                            "value": "100%"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]
+{
+    "devices": [
+        {
+            "deviceName": "Hue Bulb",
+            "deviceId": "1922",
+        },
+        {
+            "deviceName": "Hue Sensor",
+            "deviceId": "1923",
+        }
+    ],
+    "comments": [
+        {
+            "text": "I want my curtains to unfold when I wake up"
+        }
+    ]
+}

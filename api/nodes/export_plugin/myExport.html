@@ -1,0 +1,32 @@
+<script type="text/javascript">
+    RED.nodes.registerType('myExport', {
+        category: 'speciale',
+        color: '#60db4d',
+        defaults: {
+            name: { value: "" },
+            blocks: { value: 0 }
+        },
+        inputs: 1,
+        outputs: 1,
+        inputLabels: "actionCommentTrigger",
+        outputLabels: ["feature"],
+        icon: "font-awesome/fa-angle-right",
+        label: function () {
+            return this.name || "myExport";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="myExport">
+    <div class="form-row">
+        <label for="node-name"><i class="fa fa-tag"></i> Feature Name</label>
+        <input type="text" id="node-input-name" placeholder="Feature Name">  
+        <label for="node-blocks"><i class="fa fa-tag"></i>Blocks</label>
+        <input type="text" id="node-input-blocks" placeholder="0">  
+
+    </div>
+</script>
+
+<script type="text/html" data-help-name="myExport">
+    <h3>Feature</h3>
+</script>
