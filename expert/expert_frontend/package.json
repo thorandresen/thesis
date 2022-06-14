@@ -1,0 +1,26 @@
+{
+  "name": "expert_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@uiw/react-textarea-code-editor": "^1.4.4",
+    "bootstrap": "^5.1.3",
+    "next": "^12.1.5",
+    "next-remove-imports": "^1.0.6",
+    "react": "18.0.0",
+    "react-bootstrap": "^2.3.1",
+    "react-dom": "18.0.0",
+    "react-tabs": "^5.1.0",
+    "react-use-websocket": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-next": "^12.1.5"
+  }
+}

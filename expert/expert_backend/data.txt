@@ -1,0 +1,154 @@
+type: action name: myAction
+while(true){
+  HueBulb.brightness = 0;
+  delay(5);
+  HueBulb.brightness = 0;
+  HueBulb.hue = Random.nextInt(0,50000);
+}
+ 
+type: trigger name: longPresence
+activityCounter = 0;
+for(let i = 0; i<5;i++){
+  if(MotionSensor.presence === true){
+     activityCounter++
+     delay(10);
+  }
+}
+if(activityCounter > 4){
+  trigger()
+}
+ 
+deploy1
+______________________
+type: comment name: myComment
+I provided some options for choosing how long the motion sensor should detect presence (resembling how much activity is in the room). 
+I also gave a couple of options of lighting you can select from.
+ 
+partyLight
+______________________
+type: trigger name: longPresence
+activityCounter = 0;
+for(let i = 0; i<5;i++){
+  if(MotionSensor.presence == true){
+    activityCounter++;
+    delay(5);
+  }
+}
+if(activityCounter > 4){
+  trigger()
+}
+ 
+type: trigger name: medPresence
+activityCounter = 0;
+for(let i = 0; i<5;i++){
+  if(MotionSensor.presence == true){
+    activityCounter++;
+    delay(5);
+  }
+}
+if(activityCounter > 2){
+  trigger()
+}
+ 
+type: action name: blink
+while(true){
+ HueBulb.brightness=0;
+ delay(2);
+ HueBulb.brightness=256;
+ HueBulb.hue = Random.nextInt(0,50000);
+}
+ 
+type: action name: static
+HueBulb.brightness = 256;
+HueBulb.Hue = 23000;
+ 
+type: trigger name: shortPresence
+activityCounter = 0;
+for(let i = 0; i<5;i++){
+  if(MotionSensor.presence == true){
+    activityCounter++;
+    delay(5);
+  }
+}
+if(activityCounter > 3){
+  trigger()
+}
+ 
+type: action name: pulse
+while(true){
+  for(let i = 0; i<256; i++){
+     HueBulb.brightness = i; 
+  }
+  for(let i = 256; i>0; i--){
+     HueBulb.brightness = i; 
+  }
+}
+ 
+type: comment name: partyLightExplanation
+I provided some options for choosing how long the motion sensor should detect presence (resembling activity in the room).
+I also gave som options of lighting you can select from
+ 
+PartyLight
+______________________
+type: trigger name: longPresence
+let motionCounter = 0;
+for(let i = 0; i<5; i++){
+  if(MotionSensor.presence == true){
+    motionCounter++
+  }
+  delay(5)
+}
+if(motionCounter > 4){
+  trigger()
+}
+ 
+type: trigger name: medPresence
+let motionCounter = 0;
+for(let i = 0; i<5; i++){
+  if(MotionSensor.presence == true){
+    motionCounter++
+  }
+  delay(5)
+}
+if(motionCounter > 3){
+  trigger()
+}
+ 
+type: trigger name: smallPresence
+let motionCounter = 0;
+for(let i = 0; i<5; i++){
+  if(MotionSensor.presence == true){
+    motionCounter++
+  }
+  delay(5)
+}
+if(motionCounter > 2){
+  trigger()
+}
+ 
+type: action name: static
+HueBulb.brightness = 256;
+HueBulb.hue = 35000;
+ 
+type: comment name: myComment
+Ive provided options for selecting how much motion triggers the light modes.
+The light can be changed between three modes.
+ 
+type: action name: pulse
+while(true){
+  for(let i = 0; i<256; i++){
+    HueBulb.brightness = i;
+  }
+  for(let i = 256; i>0; i--){
+    HueBulb.brightness = i;
+  }
+}
+ 
+type: action name: blink
+while(true){
+  HueBulb.brightness = 0;
+  delay(1);
+  HueBulb.brightness = 256;
+  HueBulb.hue = Random.nextInt(0,50000);
+}
+ 
